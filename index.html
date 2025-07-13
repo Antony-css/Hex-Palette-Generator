@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" type="image/png" href="/assets/Logo.png">
+    <script src="script.js" defer></script>
+    <title>HEX Color Palette Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Color Palette Generator</h1>
+
+
+        <div class="top-row" style="display: flex; align-items: center; justify-content: center; gap: 1.2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <button id="generate-btn">
+                <i class="fas fa-sync-alt"></i>
+                HEX Generate Random Palette
+            </button>
+        </div>
+        <div class="similar-input-row" style="display: flex; gap: 0.5rem; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <input id="similar-color-input" type="text" placeholder="#AABBCC" maxlength="7" style="padding: 0.5rem 1rem; border-radius: 0.5rem; border: 1px solid #ccc; font-size: 1rem; width: 120px;">
+            <button id="similar-generate-btn" style="padding: 0.5rem 1.2rem; border-radius: 0.5rem; border: none; background: linear-gradient(45deg, #667eea, #764ba2); color: #fff; font-weight: 600; cursor: pointer;">Similar Colors</button>
+        </div>
+
+        <div class="mix-container" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.2rem;">
+            <input id="mix-color-1" type="text" placeholder="#AABBCC" maxlength="7" style="padding: 0.3rem 0.7rem; border-radius: 0.4rem; border: 1px solid #ccc; font-size: 0.95rem; width: 90px;">
+            <span style="font-size:1.2rem; color:#888;">+</span>
+            <input id="mix-color-2" type="text" placeholder="#334455" maxlength="7" style="padding: 0.3rem 0.7rem; border-radius: 0.4rem; border: 1px solid #ccc; font-size: 0.95rem; width: 90px;">
+            <button id="mix-generate-btn" style="padding: 0.3rem 1rem; border-radius: 0.4rem; border: none; background: linear-gradient(45deg, #667eea, #764ba2); color: #fff; font-weight: 600; cursor: pointer; font-size: 0.95rem;">Mix & Similar</button>
+        </div>
+
+        <div class="palette-container">
+            <!-- Color box 1 -->
+             <div class="color-box">
+                <div class="color" style="background-color: #e1f5fe;"></div>
+                <div class="color-info">
+                    <span class="hex-value">#E1F5FE</span>
+                    <i class="far fa-copy copy-btn" title="copy to clipboard"></i>
+                </div>
+             </div>
+
+            <!-- Color box 2 -->
+             <div class="color-box">
+                <div class="color" style="background-color: #e1f5fe;"></div>
+                <div class="color-info">
+                    <span class="hex-value">#E1F5FE</span>
+                    <i class="far fa-copy copy-btn" title="copy to clipboard"></i>
+                </div>
+             </div>
+
+            <!-- Color box 3 -->
+             <div class="color-box">
+                <div class="color" style="background-color: #e1f5fe;"></div>
+                <div class="color-info">
+                    <span class="hex-value">#E1F5FE</span>
+                    <i class="far fa-copy copy-btn" title="copy to clipboard"></i>
+                </div>
+             </div>
+
+            <!-- Color box 4 -->
+             <div class="color-box">
+                <div class="color" style="background-color: #e1f5fe;"></div>
+                <div class="color-info">
+                    <span class="hex-value">#E1F5FE</span>
+                    <i class="far fa-copy copy-btn" title="copy to clipboard"></i>
+                </div>
+             </div>
+
+            <!-- Color box 5 -->
+             <div class="color-box">
+                <div class="color" style="background-color: #e1f5fe;"></div>
+                <div class="color-info">
+                    <span class="hex-value">#E1F5FE</span>
+                    <i class="far fa-copy copy-btn" title="copy to clipboard"></i>
+                </div>
+             </div>
+        </div>
+    </div>
+    
+</body>
+</html>
